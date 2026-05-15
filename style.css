@@ -634,3 +634,10 @@ span {
     box-shadow: none;
     display: block;
 }
+
+/* WhatsApp Unique Vector Doodle Background Overlay */
+body, .home, .services, .skills, .education, .experience, .contact, .footer {
+    background-image: url("data:image/svg+xml,%3Csvg width='300' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300abf0' stroke='%2300abf0' opacity='0.08'%3E%3Cpath d='M40 50h50v40h-20l-15 15v-15h-15z' fill='none' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M200 50a15 15 0 0 1 30 0c0 20-30 30-30 30s-30-10-30-30a15 15 0 0 1 30 0z' fill='none' stroke-width='3'/%3E%3Ccircle cx='230' cy='200' r='25' fill='none' stroke-width='3'/%3E%3Ccircle cx='220' cy='190' r='4' fill='%2300abf0'/%3E%3Ccircle cx='240' cy='190' r='4' fill='%2300abf0'/%3E%3Cpath d='M215 205a15 15 0 0 0 30 0' fill='none' stroke-width='3'/%3E%3Cpath d='M60 200h40v50h-50v-40l10-10z' fill='none' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M120 120l8 20h20l-15 15 8 20-20-15-20 15 8-20-15-15h20z' fill='none' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M150 250c15-15 30 0 45-15s30-15 45 0' fill='none' stroke-width='3'/%3E%3Ccircle cx='20' cy='20' r='4' fill='%2300abf0'/%3E%3Ccircle cx='130' cy='30' r='6' fill='none' stroke-width='2'/%3E%3Ccircle cx='270' cy='130' r='5' fill='%2300abf0'/%3E%3Cpath d='M20 140c10-20 30-10 40 0' fill='none' stroke-width='2'/%3E%3Cpath d='M250 80h20v20h-20z' fill='none' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 300px;
+    background-attachment: fixed;
+}

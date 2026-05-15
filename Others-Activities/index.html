@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">type<span>test</span></div>
+            <div class="controls">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="bn">বাং</button>
+                </div>
+                <div class="difficulty-selector hidden" id="difficulty-selector">
+                    <button class="diff-btn active" data-diff="easy">Easy</button>
+                    <button class="diff-btn" data-diff="medium">Med</button>
+                    <button class="diff-btn" data-diff="hard">Hard</button>
+                </div>
+                <div class="time-selector">
+                    <button class="time-btn" data-time="15">15s</button>
+                    <button class="time-btn active" data-time="30">30s</button>
+                    <button class="time-btn" data-time="60">60s</button>
+                </div>
+            </div>
+        </header>
+
+        <main id="typing-section">
+            <div id="timer">30</div>
+            <div id="words-container"></div>
+            <div class="restart-hint">Press <span>Tab</span> + <span>Enter</span> to restart</div>
+        </main>
+
+        <section id="results-section" class="hidden">
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-title">WPM</div>
+                    <div class="stat-value" id="wpm-value">0</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-title">Accuracy</div>
+                    <div class="stat-value" id="acc-value">0%</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-title">Keystrokes</div>
+                    <div class="stat-value" id="key-value"><span class="correct-text">0</span> | <span
+                            class="incorrect-text">0</span></div>
+                </div>
+            </div>
+            <button id="restart-btn" class="restart-btn">Restart Test</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
