@@ -55,20 +55,8 @@ header {
 .logo img {
     height: 4rem; /* Standard logo height */
     width: auto;
-    animation: logoGlow 3s infinite ease-in-out;
-    transform-origin: left center;
+    filter: drop-shadow(0 0 5px var(--main-color));
     transition: 0.3s;
-}
-
-@keyframes logoGlow {
-    0%, 100% {
-        filter: drop-shadow(0 0 5px var(--main-color));
-        transform: translateY(0) scale(1); /* Normal size */
-    }
-    50% {
-        filter: drop-shadow(0 0 15px var(--main-color));
-        transform: translateY(-3px) scale(1.05); /* Slight bounce and scale */
-    }
 }
 
 .logo:hover img {
@@ -95,13 +83,13 @@ nav a.active {
     nav {
         position: absolute;
         display: none;
-        top: 0;
+        top: 100%;
         right: 0;
         width: 40%;
         border-left: 3px solid var(--main-color);
         border-bottom: 3px solid var(--main-color);
         border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
+        padding: 1rem 2rem;
         background-color: var(--second-bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     }
